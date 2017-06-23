@@ -17,12 +17,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button bt1 = (Button) findViewById(R.id.button);
+        Button bt1 = (Button) findViewById(R.id.button);//Decleration
 
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
+                Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);//on onCLick, the app redirects to a new activity i.e. the contacts page
                 startActivityForResult(intent, 1);
             }
         });
