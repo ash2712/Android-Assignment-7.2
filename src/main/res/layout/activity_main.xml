@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.097" />
 
-    <Button//To redirect user to contacts
+    <Button
         android:id="@+id/button"
         android:text="enter contacts"
         android:layout_width="368dp"
